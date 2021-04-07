@@ -1,19 +1,23 @@
 {
-  "name": "mini-pages-tpl",
+  "name": "svelte-app",
   "version": "1.0.0",
-  "description": "活动页面项目模版",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/listentime/mini-pages-tpl.git"
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/listentime/mini-pages-tpl/issues"
-  },
-  "homepage": "https://github.com/listentime/mini-pages-tpl#readme"
+  "dependencies": {
+    "sirv-cli": "^1.0.0"
+  }
 }
